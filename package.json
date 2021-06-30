@@ -18,7 +18,8 @@
   },
   "homepage": "https://github.com/thaless4nt0s/todo-list#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "mongoose": "^5.13.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.8"
