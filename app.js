@@ -8,6 +8,8 @@ require("./config/database")
 const app = express()
 app.use(express.json())
 
+app.use(express.static(path.join(__dirname, 'public'))) //Os arquivos estáticos ficarao na pasta 'public'
+
 app.set("views", path.join(__dirname,'src/views'))//Diretório onde serão armazenados as views
 app.set("view engine", 'ejs')//qual tipo de arquivo as views terao
 
