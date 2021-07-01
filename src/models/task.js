@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-const taskSchema = mongoose.taskSchema({
+const taskSchema = mongoose.Schema({
     name: {type: String, required: true},
     done:{type: Boolean, default: false},
     checklist:{
