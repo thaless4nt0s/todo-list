@@ -7,6 +7,7 @@ require("./config/database")
 
 const app = express()
 app.use(express.json())
+app.use(express.urlencoded({extended: true}))//pega os valores do form e deixa disponivel
 
 app.use(express.static(path.join(__dirname, 'public'))) //Os arquivos estáticos ficarao na pasta 'public'
 
